@@ -200,7 +200,7 @@ img {
   color: var(--nav-background-color);
 }
 
-.hero-btn {
+.hero__btn {
   padding: 10px 32px;
 
   font-family: "Roboto";
@@ -220,8 +220,8 @@ img {
   transition: background-color 250ms var(--hover-time-func),
     box-shadow 250ms var(--hover-time-func);
 }
-.hero-btn:focus,
-.hero-btn:hover {
+.hero__btn:focus,
+.hero__btn:hover {
   background-color: var(--accent-color-hover);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
@@ -474,11 +474,11 @@ img {
   color: var(--accent-color);
 }
 
-.join-us {
+.follow {
   max-width: 206px;
   margin-left: 70px;
 }
-.join-us p {
+.follow__text {
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -489,22 +489,20 @@ img {
 
   margin-bottom: 20px;
 }
-.footer-soclinks a {
+.social-links__link--background-color {
   background-color: var(--footer-bgc-soc);
   border-radius: 50%;
 }
-.footer-soclinks .icon-instagram,
-.footer-soclinks .icon-twitter,
-.footer-soclinks .icon-facebook,
-.footer-soclinks .icon-linkedin {
+.social-links__icon--white {
   fill: var(--nav-background-color);
 }
+
 .signup-form {
   margin-left: 93px;
   min-width: 570px;
 }
 
-.signup-form-title {
+.signup-form__title {
   margin-bottom: 20px;
 
   font-weight: 700;
@@ -516,7 +514,7 @@ img {
   color: var(--nav-background-color);
 }
 
-.signup-form-input {
+.signup-form__input {
   min-width: 358px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -533,7 +531,7 @@ img {
   border-radius: 4px;
 }
 
-.submit-btn {
+.signup-form__submit-btn {
   display: inline-flex;
   align-items: center;
   min-width: 200px;
@@ -557,14 +555,10 @@ img {
   transition: background-color 250ms var(--hover-time-func),
     box-shadow 250ms var(--hover-time-func);
 }
-.submit-btn:focus,
-.submit-btn:hover {
+.signup-form__submit-btn:focus,
+.signup-form__submit-btn:hover {
   background-color: var(--accent-color-hover);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.icon-send {
-  display: block;
 }
 
 /* Modal window styles */
@@ -603,10 +597,10 @@ img {
   transform: translate(-50%, -50%) scale(0.9);
 }
 
-.modal-form {
+.modal__form {
   padding: 40px;
 }
-.modal-form p {
+.modal__text {
   margin-bottom: 12px;
 
   font-family: inherit;
@@ -618,7 +612,7 @@ img {
 
   color: var(--secondary-text-color);
 }
-.modal-form-label {
+.modal__label {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -629,7 +623,7 @@ img {
   letter-spacing: 0.01em;
 }
 
-.modal-form-input {
+.modal__input {
   width: 100%;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -641,26 +635,22 @@ img {
   transition: border 250ms var(--hover-time-func),
     fill 250ms var(--hover-time-func);
 }
-.icon-name,
-.icon-phone,
-.icon-email {
+.modal__icon {
   position: absolute;
   top: 50%;
   left: 12px;
 }
-.modal-form-input:focus-within {
+.modal__input:focus-within {
   border: var(--modal-form-input-border-accent);
 }
-.modal-form-input:focus-visible {
+.modal__input:focus-visible {
   outline: none;
 }
-.modal-form-input:focus-within + .icon-name,
-.modal-form-input:focus-within + .icon-phone,
-.modal-form-input:focus-within + .icon-email {
+.modal__input:focus-within + .modal__icon {
   fill: var(--accent-color);
 }
 
-.modal-form-comment {
+.modal__comment {
   padding: 12px 16px;
   min-height: 120px;
   resize: none;
@@ -673,32 +663,32 @@ img {
   transition: border 250ms var(--hover-time-func);
 }
 
-.modal-form-comment [placeholder] {
+.modal__comment [placeholder] {
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-form-comment:focus-within {
+.modal__comment:focus-within {
   border: var(--modal-form-input-border-accent);
 }
 
-.modal-form-comment:focus-visible {
+.modal__comment:focus-visible {
   outline: none;
 }
 
-.modal-link {
+.modal__link {
   color: var(--accent-color);
 }
 
-.modal-check {
+.modal__check {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
 }
 
-.icon-check {
+.modal__icon-check {
   display: inline-block;
   margin-right: 7px;
   border: 2px solid var(--secondary-text-color);
@@ -708,13 +698,13 @@ img {
     border 250ms var(--hover-time-func);
 }
 
-.modal-check-input:checked + .icon-check {
+.modal__check-input:checked + .modal__icon-check {
   background-color: var(--accent-color);
   background-origin: border-box;
   border: var(--accent-color);
 }
 
-.send-btn {
+.hero__btn--center {
   display: block;
   margin: 0 auto;
 }
@@ -738,7 +728,7 @@ img {
   transition: color 250ms var(--hover-time-func);
 }
 
-.close-btn-icon {
+.close-btn__icon {
   fill: currentColor;
 }
 
