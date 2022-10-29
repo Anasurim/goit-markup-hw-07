@@ -742,11 +742,9 @@ img {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  gap: 8px;
 }
 
-.filter__item + .filter__item {
-  margin-left: 8px;
-}
 .filter__btn {
   color: var(--secondary-text-color);
   background-color: var(--secondary-bg-color);
