@@ -13,6 +13,7 @@
 }
 
 .footer__logo {
+  @extend .logo;
   display: inline-flex;
   margin-bottom: 20px;
   color: $nav-background-color;
