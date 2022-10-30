@@ -10,15 +10,15 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 
-  transition: color 250ms var(--hover-time-func);
+  transition: color 250ms $hover-time-func;
 
   &:focus,
   &:hover,
   &:focus,
   &:hover {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }
 
@@ -26,12 +26,6 @@
   margin-right: 10px;
   fill: currentColor;
 }
-// .header__mail:focus,
-// .header__mail:hover,
-// .header__phone:focus,
-// .header__phone:hover {
-//   color: var(--accent-color);
-// }
 
 .adress__mail,
 .adress__phone {
